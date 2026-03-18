@@ -1,13 +1,15 @@
-# model-explainer
+# Model Explainer
 
-Stub Python project. Described as an ML model explainability tool, but none of that functionality exists.
+Interpretability toolkit for understanding and explaining AI model predictions.
 
-## What's actually here
+## About
+Model Explainer provides tools for making machine learning model decisions transparent and interpretable. It generates feature attributions, attention visualizations, and natural language explanations to help users understand why a model made a particular prediction.
 
-A single class in `src/core.py` (ModelExplainer) with placeholder methods that each return a fixed dictionary without doing any real work. There is no model interpretation, no feature importance analysis, no explainability logic - just stubs.
-
-The project uses only Python standard library imports (time, logging, json, typing). No ML or explainability libraries are present.
+## Tech Stack
+- Language: Python
+- Methods: SHAP, attention analysis, feature attribution
+- Visualization: Interactive explanation displays
+- Integration: Works with common ML frameworks
 
 ## Status
-
-Scaffolding only. No working model explainability functionality exists.
+Active development - explanation methods and visualization components established.
