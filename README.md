@@ -1,41 +1,13 @@
 # model-explainer
 
-**Explain any AI model prediction with SHAP, LIME, and attention visualization**
+Stub Python project. Described as an ML model explainability tool, but none of that functionality exists.
 
-![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
+## What's actually here
 
-## Install
-```bash
-pip install -e ".[dev]"
-```
+A single class in `src/core.py` (ModelExplainer) with placeholder methods that each return a fixed dictionary without doing any real work. There is no model interpretation, no feature importance analysis, no explainability logic - just stubs.
 
-## Quick Start
-```python
-from src.core import ModelExplainer
- instance = ModelExplainer()
-r = instance.track(input="test")
-```
+The project uses only Python standard library imports (time, logging, json, typing). No ML or explainability libraries are present.
 
-## CLI
-```bash
-python -m src status
-python -m src run --input "data"
-```
+## Status
 
-## API
-| Method | Description |
-|--------|-------------|
-| `track()` | Track |
-| `predict()` | Predict |
-| `forecast()` | Forecast |
-| `alert()` | Alert |
-| `get_history()` | Get history |
-| `visualize()` | Visualize |
-| `get_stats()` | Get stats |
-| `reset()` | Reset |
-
-## Test
-```bash
-pytest tests/ -v
-```
-
+Scaffolding only. No working model explainability functionality exists.
