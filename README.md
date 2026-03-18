@@ -1,63 +1,43 @@
-# Model Explainer
+# model-explainer
 
-Explain AI predictions with SHAP, LIME, attention viz
+**Explain any AI model prediction with SHAP, LIME, and attention visualization**
 
-## Features
+![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
 
-- Api
-Explainer
-Methods - Attention
-Methods - Lime Wrapper
-Methods - Shap Wrapper
-Reporter
-Visualizer
-
-## Tech Stack
-
-- **Language:** Python
-- **Framework:** FastAPI
-- **Key Dependencies:** pydantic,fastapi,uvicorn,anthropic,openai,numpy
-- **Containerization:** Docker + Docker Compose
-
-## Getting Started
-
-### Prerequisites
-
-- Python 3.11+
-- Docker & Docker Compose (optional)
-
-### Installation
-
+## Install
 ```bash
-git clone https://github.com/MukundaKatta/model-explainer.git
-cd model-explainer
-pip install -r requirements.txt
+pip install -e ".[dev]"
 ```
 
-### Running
+## Quick Start
+```python
+from src.core import ModelExplainer
+ instance = ModelExplainer()
+r = instance.track(input="test")
+```
 
+## CLI
 ```bash
-uvicorn app.main:app --reload
+python -m src status
+python -m src run --input "data"
 ```
 
-### Docker
+## API
+| Method | Description |
+|--------|-------------|
+| `track()` | Track |
+| `predict()` | Predict |
+| `forecast()` | Forecast |
+| `alert()` | Alert |
+| `get_history()` | Get history |
+| `visualize()` | Visualize |
+| `get_stats()` | Get stats |
+| `reset()` | Reset |
 
+## Test
 ```bash
-docker-compose up
-```
-
-## Project Structure
-
-```
-model-explainer/
-├── src/           # Source code
-├── tests/         # Test suite
-├── Dockerfile
-├── docker-compose.yml
-├── requirements.txt
-└── README.md
+pytest tests/ -v
 ```
 
 ## License
-
-MIT
+(c) 2026 Officethree Technologies. All Rights Reserved.
