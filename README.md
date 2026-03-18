@@ -1,30 +1,63 @@
-# model-explainer
+# Model Explainer
 
-**Explain AI predictions with SHAP, LIME, attention viz**
+Explain AI predictions with SHAP, LIME, attention viz
 
-## Install
+## Features
+
+- Api
+Explainer
+Methods - Attention
+Methods - Lime Wrapper
+Methods - Shap Wrapper
+Reporter
+Visualizer
+
+## Tech Stack
+
+- **Language:** Python
+- **Framework:** FastAPI
+- **Key Dependencies:** pydantic,fastapi,uvicorn,anthropic,openai,numpy
+- **Containerization:** Docker + Docker Compose
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.11+
+- Docker & Docker Compose (optional)
+
+### Installation
+
 ```bash
-pip install -e '.[dev]'
+git clone https://github.com/MukundaKatta/model-explainer.git
+cd model-explainer
+pip install -r requirements.txt
 ```
 
-## Quick Start
-```python
-from src import __version__
+### Running
+
+```bash
+uvicorn app.main:app --reload
 ```
 
-## Modules
-- **explainer**
-- **shap_wrapper**
-- **lime_wrapper**
-- **attention**
-- **visualizer**
-- **reporter**
-- **api**
+### Docker
 
-## Docker
 ```bash
-docker compose up
+docker-compose up
+```
+
+## Project Structure
+
+```
+model-explainer/
+├── src/           # Source code
+├── tests/         # Test suite
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+└── README.md
 ```
 
 ## License
-(c) 2026 Officethree Technologies. All Rights Reserved.
+
+MIT
